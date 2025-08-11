@@ -36,13 +36,13 @@
         <div>
           <!-- menu -->
           <div style="text-align: right;">
-            <label for="player-tools-toggleMenu" id="player-tools-toggle">🔧 Tools</label>
+            <label for="btnPiano" id="player-tools-toggle">🎹 Piano</label>
             <label for="player-files-toggleMenu" id="player-files-toggle">📁 Files</label><br>
           </div>
           <!-- tools -->
-          <input type="checkbox" id="player-tools-toggleMenu">
-          <div id="player-tools" class="player-tools" style="text-align: right;">
-            <button id="btnPiano" class="piano-button-x3">🎹 Piano</button>
+          <input type="checkbox" id="btnPiano" style="display: none;">
+          <div id="player-tools" class="player-tools" style="text-align: right; display: none;">
+            <button class="piano-button-x3">🎹 Piano</button>
             <button id="btnToolVoice" class="piano-button-x3">🎻 Voice</button>
             <button id="btnToolCommand" class="piano-button-x3">📝 Cmd</button>
           </div>
