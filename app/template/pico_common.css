@@ -3,6 +3,12 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
+  font-family: serif, Noto Color Emoji;
+}
+
+button {
+  cursor: pointer;
+  font-family: sans-serif, Noto Color Emoji;
 }
 
 #app-loader {
@@ -136,27 +142,27 @@ body {
   background-color: #f0f0f0;
 }
 
-#picosakura-player .play-button {
-  width: 6em;
-  font-size: 1em;
-  background-color: #4090f0;
-  color: white;
-}
+/* #picosakura-player .play-button { */
+  /* width: 6em; */
+  /* font-size: 1em; */
+  /* background-color: #4090f0; */
+  /* color: white; */
+/* } */
 
-#picosakura-player .stop-button {
-  width: 3em;
-  font-size: 1em;
-}
+/* #picosakura-player .stop-button { */
+  /* width: 3em; */
+  /* font-size: 1em; */
+/* } */
 
-#picosakura-player .piano-button {
-  width: 3em;
-  font-size: 1em;
-}
+/* #picosakura-player .piano-button { */
+  /* width: 3em; */
+  /* font-size: 1em; */
+/* } */
 
-#picosakura-player .piano-button-x3 {
-  width: 8em;
-  font-size: 0.7em;
-}
+/* #picosakura-player .piano-button-x3 { */
+  /* width: 8em; */
+  /* font-size: 0.7em; */
+/* } */
 
 #piano-canvas {
   margin: 0px;
