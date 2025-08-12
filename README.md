@@ -1,36 +1,22 @@
-# Picosakura for Web Browser
+# PicoPants for Web Browser
 
-Picosakura is an MML player for Sakuramml.
-MML stands for Music Macro Language.
-Picosakura use SoundFont to play MML files.
-
-- [Picosakura(Web)](https://sakuramml.com/picosakura/index.php)
-- [MML Engine(sakuramml-rust)](https://github.com/kujirahand/sakuramml-rust)
-- [Command-line(picosakura-rust)](https://github.com/kujirahand/picosakura-rust)
-- [sakuramml.com(Web)](https://sakuramml.com)
-
-## Picosakura (Japanese)
-
-『テキスト音楽「サクラ」』は「ドレミ」のテキストで音楽制作ができるツールです。
-サクラはもともとWindows専用のツールでしたが、「ピコサクラ」はサクラをブラウザ上で動くように移植したものです。以下のピコサクラを利用すると、ブラウザ上で音楽制作ができます。
-
-- [ピコサクラ(Web)](https://sakuramml.com/picosakura/index.php)
+PicoPants is a web tool for MML music based on [PicoSakura](https://github.com/kujirahand/picosakura). It focuses on [Mariopants](https://battleofthebits.com/lyceum/View/Mariopants) composition and export.
 
 ## How to use
 
-Visit [Picosakura(Web)](https://sakuramml.com/picosakura/index.php),
-Or execute with PHP.
+Visit [PicoPants](https://1bengardner.github.io/picopants/) and play.
 
-Download and execute:
+or download and execute:
 
 ```sh
-# download picosakura
-git clone https://github.com/kujirahand/picosakura.git
-cd picosakura
+# download PicoPants
+git clone https://github.com/1bengardner/picopants.git
+cd PicoPants
 
 # start server
-php -S localhost:8888
 
-# visit with browser
-# http://localhost:8888
+# visit in browser
+# http://localhost:8000
 ```
+
+*Not sure how to start a server?* See [START_SERVER](START_SERVER.md).
