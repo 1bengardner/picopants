@@ -258,7 +258,7 @@ function sakura_log(s) {
     if (s === '') {
         s = 'ok.';
     }
-    if (s.indexOf('[ERROR]') >= 0) { msg_memo += '<br><span class="memo">※' + window._picosakura.getLang('Click on [ERROR] to jump.') + '</span>'; }
+    if (s.indexOf('[ERROR]') >= 0) { msg_memo += '<br><span class="memo">※' + window._picosakura.getLang('Click on [ERROR] to jump.').replace('[ERROR]', '<span class="dummy-error">[ERROR]</span>') + '</span>'; }
     msg.innerHTML = tohtmlError(s) + msg_memo;
     msg.style.display = 'block';
 }

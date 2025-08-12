@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PicoSakura - ピコサクラ - テキスト音楽「サクラ」</title>
+  <title>PicoPants</title>
   <!-- baseUrl: . -->  
   <!-- css -->
   <link rel="stylesheet" href="./resource/skin.css">
@@ -19,8 +19,8 @@
     
     <div id="app-title">
       <div id="app-title-bar">
-        <div id="app-title-bar-home" class="app-title-bar-l"><a href="https://sakuramml.com/">&lt; 🏠</a></div>
-        <div class="app-title-bar-c"><h1 id="app-title-h1">PicoSakura</h1></div>
+        <div id="app-title-bar-home" class="app-title-bar-l"><a href="#">&lt; 🏠</a></div>
+        <div class="app-title-bar-c"><h1 id="app-title-h1">PicoPants</h1></div>
         <div class="app-title-bar-r"><button id="app-title-bar-help">?</button></div>
       </div>
     </div>
@@ -52,11 +52,13 @@
           <div id="player-files" class="player-files">
             <p>Save: <span id="save-list"></span></p>
             <p>Load: <span id="load-list"></span></p>
-            <p style="text-align: left; background-color: rgba(255, 255, 255, 0.8);">
-              - <a target="_blank" id="export_wav" class="lang" href="./tools/wav_converter.html">
+            <p style="text-align: left;">
+              <a id="export_midi" class="lang" href="#" onclick="window._picosakura.exportSHO()">
+                Export to SHO</a>
+              <!-- - <a target="_blank" id="export_wav" class="lang" href="./tools/wav_converter.html">
                 Export to WAV</a><br>
               - <a id="export_midi" class="lang" href="#" onclick="window._picosakura.exportMIDI()">Export to MIDI</a>
-              <span id="export_midi_link"></span>
+              <span id="export_midi_link"></span> -->
 
             </p>
           </div>
@@ -132,8 +134,8 @@
             </p>
           </div>
           <div id="descript-en">
-            <h3>About Picosakura</h3>
-            <p>This is a user-friendly music production tool that allows music creation directly in the browser. It converts text into music and plays it back.</p>
+            <h3>About PicoPants</h3>
+            <p>This is a Mario Paint music production tool based on PicoSakura. You can export MML to .sho files (eventually, hopefully).</p>
             <p>Shortcut key: (Play : F9 / Stop : F10)</p>
             <h3>Command List</h3>
             <p>
@@ -174,7 +176,7 @@
         <a href="https://sakuramml.com/picosakura/" target="_new">picosakura</a>
       </span> -
       <span class="footer-link">
-        <a href="https://github.com/kujirahand/picosakura" target="_new">(repo.)</a>
+        <a href="https://github.com/1bengardner/picopants" target="_new">(picopants repo.)</a>
       </span>
     </div>
   </div>

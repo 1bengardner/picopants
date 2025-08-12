@@ -2,12 +2,14 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
-  font-family: serif, Noto Color Emoji;
+  background-color: #c8e8e0;
+  font-family: sans-serif, Noto Color Emoji;
 }
 
-button {
+button, label {
   cursor: pointer;
+}
+button {
   font-family: sans-serif, Noto Color Emoji;
 }
 
@@ -16,13 +18,14 @@ button {
   text-align: center;
   padding: 0.5em;
   font-size: 0.7em;
-  color: gray;
+  color: #92dbff;
 }
 
 #app-title-bar {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: #fff0f0;
+  background-color: #f8b0f8;
+  border-bottom: 2px solid #000000;
 }
 
 #app-title-bar .app-title-bar-r {
@@ -61,7 +64,7 @@ button {
 }
 
 .skin-type {
-  border-bottom: 1px solid silver;
+  border-bottom: 1px solid #a0c0b0;
   padding-left: 1em;
 }
 
@@ -91,7 +94,7 @@ button {
 .tool {
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px dotted silver;
+  border-bottom: 1px dotted #a0c0b0;
 }
 
 #app-title {
@@ -103,8 +106,8 @@ button {
   padding: 0.5em;
   margin: 1em;
   background-color: rgb(255, 255, 255, 0.9);
-  border-right: 2px solid gray;
-  border-bottom: 2px solid gray;}
+  border-right: 2px solid #92dbff;
+  border-bottom: 2px solid #92dbff;}
 
 #splash-window-body {
   font-size: 0.9em;
@@ -112,12 +115,12 @@ button {
 }
 
 #picosakura-player h1 {
-  color: gray;
-  background-color: #fff0f0;
+  color: #92dbff;
   padding: 0.2em;
   margin: 0em;
   font-size: 1.0em;
   text-align: center;
+  text-shadow: 0px -2px 0 #0053b5, 0 0 4px #0053b5;
 }
 
 #picosakura-player {
@@ -137,7 +140,7 @@ button {
 
 #player button {
   border-radius: 4px;
-  border: 1px solid silver;
+  border: 1px solid #a0c0b0;
   padding: 8px;
   background-color: #f0f0f0;
 }
@@ -149,10 +152,11 @@ button {
   /* color: white; */
 /* } */
 
-/* #picosakura-player .stop-button { */
-  /* width: 3em; */
-  /* font-size: 1em; */
-/* } */
+#picosakura-player .stop-button {
+  color: #f0f0f0;
+  background-color: #f828f8;
+  border: 1px solid #a870d0;
+}
 
 /* #picosakura-player .piano-button { */
   /* width: 3em; */
@@ -171,7 +175,7 @@ button {
 }
 
 #piano-outer .piano-parts {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #f8f8f8c0;
   padding: 4px;
 }
 
@@ -182,12 +186,12 @@ button {
 }
 
 #picosakura-player .player-synth-selector {
-  background-color: #fcfcfc;
+  background-color: #51519bc0;
 }
 
 /* player-tools-toggle */
 #player-tools-toggle {
-  background-color: rgba(255, 230, 230, 0.8);
+  background-color: #c0c0c0c0;
   padding: 6px;
   font-size: 0.8em;
 }
@@ -201,7 +205,7 @@ button {
   display: none;
 }
 #player-tools {
-  background-color: rgba(255, 230, 230, 0.5);
+  background-color: #f8f8f8c0;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 1em;
@@ -209,7 +213,7 @@ button {
 
 /* player-files-toggle */
 #player-files-toggle {
-  background-color: rgba(255, 230, 230, 0.8);
+  background-color: #c0c0c0c0;
   padding: 6px;
   font-size: 0.8em;
 }
@@ -223,7 +227,7 @@ button {
   display: none;
 }
 #player-files {
-  background-color: rgba(255, 230, 230, 0.5);
+  background-color: #f8f8f8c0;
   padding-top: 4px;
   padding-bottom: 4px;
 }
@@ -238,31 +242,35 @@ button {
 
 /* footer */
 #picosakura-footer {
-  border-top: solid 1px silver;
+  border-top: solid 1px #a0c0b0;
   text-align: center;
   font-size: 0.8em;
-  color: gray;
+  color: #92dbff;
   margin: 0.2em;
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
 #msg {
-  color: gray;
+  color: #000;
   font-size: 0.8em;
   margin: 0.8em 0.5em 0.8em 0.5em;
-  background-color: #fff0f0;
+  background-color: #c0c0c0;
 }
 
 .error {
   color: red;
   text-decoration: underline;
   font-weight: normal;
+  cursor: pointer;
 }
 
 .error:hover {
   font-weight: bold;
-  ;
+}
+
+.dummy-error {
+  color: red;
 }
 
 /* textarea */
@@ -282,21 +290,21 @@ button {
   width: 100%;
   text-align: right;
   font-size: 0.8em;
-  color: gray;
+  color: #92dbff;
   margin-right: 8px;
   margin-top: 2px;
   margin-bottom: 6px;
 }
 
 #status_bar .box {
-  border: 1px silver solid;
+  border: 1px #a0c0b0 solid;
   padding: 2px;
   margin-right: 2px;
-  background-color: #fcfcfc;
+  background-color: #51519bc0;
 }
 
 #descript {
-  border: dashed 2px silver;
+  border: dashed 2px #a0c0b0;
   margin: 0px 8px 8px 8px;
   padding: 0px 8px 8px 8px;
   background-color: rgba(255, 255, 255, 0.95);
@@ -308,7 +316,7 @@ button {
 
 #descript h3 {
   font-size: 1.0em;
-  border-bottom: 1px solid silver;
+  border-bottom: 1px solid #a0c0b0;
 }
 
 #descript p {
@@ -319,7 +327,7 @@ button {
 #descript-close {
   font-size: 1em;
   border-radius: 0px;
-  border: 1px solid silver;
+  border: 1px solid #a0c0b0;
 }
 
 #descript-title {
@@ -327,7 +335,7 @@ button {
   grid-template-columns: 1fr auto;
   /* 左側に1フラクションの幅を割り当て、右側に自動の幅を割り当てる */
   align-items: center;
-  /* background-color: rgba(255, 230, 230, 0.8); */
+  /* background-color: #c0c0c0; */
 }
 
 #descript-title h2 {
@@ -342,8 +350,8 @@ button {
 }
 
 #descript-open .open-button {
-  border: 1px solid silver;
-  background-color: #fff0f0;
+  border: 1px solid #a0c0b0;
+  background-color: #c0c0c0;
   border-radius: 0px;
   padding: 8px;
 }
@@ -354,7 +362,7 @@ button {
 
 #voice-list h3 {
   font-size: 1.0em;
-  border-bottom: 1px solid silver;
+  border-bottom: 1px solid #a0c0b0;
 }
 
 #voice-select {
@@ -379,7 +387,7 @@ button {
   padding: 0.1em;
   font-size: 0.8em;
   border-radius: 0;
-  border: 1px solid silver;
+  border: 1px solid #a0c0b0;
 }
 
 .insertButtons select {
@@ -390,5 +398,5 @@ button {
 }
 
 .footer-link {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: unset;
 }

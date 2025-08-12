@@ -473,6 +473,11 @@ function exportMIDI() {
     console.log('[sakuramml]' + log)
 }
 
+function exportSHO() {
+    // TBD
+    alert("Not yet implemented")
+}
+
 // export
 window._picosakura.loadFromStorageNo = loadFromStorageNo
 window.gotoLine = gotoLine
@@ -480,3 +485,4 @@ window.closeDescript = closeDescript
 window.openDescript = openDescript
 window.updateLang = updateLang
 window._picosakura.exportMIDI = exportMIDI
+window._picosakura.exportSHO = exportSHO
