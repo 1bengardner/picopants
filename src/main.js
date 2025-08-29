@@ -474,8 +474,46 @@ function exportMIDI() {
 }
 
 function exportSHO() {
-    // TBD
-    alert("Not yet implemented")
+    alert("Not yet functional—only does MIDI export")
+    const txt = document.getElementById('txt')
+    const mml = txt.value
+    if (mml === '') {
+        alert('MML is empty.')
+        return
+    }
+    // SakuraCompiler
+    const g = window._picosakura
+    const ShoCompiler = g.ShoCompiler
+    if (!ShoCompiler) {
+        alert('ShoCompiler is not loaded.')
+        return
+    }
+    const compiler = ShoCompiler.new()
+    let binShoRaw = null // compiled data
+    try {
+        // compile
+        binShoRaw = compiler.compile(mml)
+    } catch (err) {
+        console.error('[MMLERROR] compile error', err)
+        g.errorStr += '[Compile Error] ' + err.toString() + '\n'
+        window.postMessage({ type: 'error', message: g.errorStr })
+        return false
+    }
+    // console.log('[compile.completed]', binShoRaw)
+    const log = compiler.get_log()
+    window.postMessage({ type: 'error', message: log })
+    // make download link
+    const a = document.createElement('a')
+    const t = new Date().toLocaleString()
+    a.innerHTML = `… [↓] Download MIDI (${t})]`
+    a.href = URL.createObjectURL(new Blob([binShoRaw], { type: 'application/octet-stream' }))
+    a.download = 'picosakura.mid'
+    // a.style.display = 'none'
+    const link = document.getElementById('export_midi_link')
+    link.innerHTML = '' // clear previous link
+    link.appendChild(a)
+    a.click()  
+    console.log('[sakuramml]' + log)
 }
 
 // export

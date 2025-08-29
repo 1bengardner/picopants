@@ -46,7 +46,7 @@ sakuramml_init_loadScript()
 // sakuramml
 // ----------------------------------------
 import init, { get_version, SakuraCompiler }
-    from './sakuramml.js'
+    from './pantsmml.js'
 // Init sakuramml
 init().then(() => {
     const sakuraVession = get_version()
